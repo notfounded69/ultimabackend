@@ -1,0 +1,35 @@
+{% extends 'core/base.html' %}
+{% load static %}
+
+{% block background %}
+{% static 'core/images/val.jpg' %}
+{% endblock %}
+
+{% block cont %}
+<div class="row">         
+  <div class="col-md-6">
+    <div class="heading">  
+      <h2>PACK Soulstrife</h2>
+      <br/>
+    </div> 
+
+</div>
+<div class="div1"> <img src="{% static 'core/images/pack1.jpeg' %}"> </div>
+<p>El valor de este pack es de 7100 vp.</p>
+  </div>
+
+  <div class="row">         
+    <div class="col-md-6">
+      <div class="heading">  
+        <h2>Pack Reaver 2.0</h2>
+        <br/>
+      </div> 
+  
+  </div>
+  <div class="div1"> <img src="{% static 'core/images/pack2.jpeg' %}"> </div>
+  <p>El valor de este pack es de 8100 vp.</p>
+    </div>
+  
+  <div class="col-md-6">
+      <div class="blockquote-box blockquote-info clearfix">
+{% endblock %}

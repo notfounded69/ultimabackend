@@ -1,0 +1,35 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% block color %}
+
+background-color:rgb(117, 15, 15)
+
+{%endblock%}
+
+
+{% block background %}
+{% static 'core/images/agent.jpg' %}
+{% endblock %}
+
+{% block cont %}
+
+
+{% for agentes in agentes %}
+<div class="row project">  	
+    <div class="col-lg-3 col-md-4 offset-lg-1">
+        <img class="img-fluid" src="{{ agentes.image.url }}" alt="">
+    </div>
+  <div class="col-lg-7 col-md-8">
+        <h2 class="section-heading title">{{ agentes.title }}</h2>
+    
+    <p>{{ agentes.detail }}</p>
+
+    <p><a href="https://playvalorant.com/es-es/agents/{{ agentes.title }}/">Más información</a></p>
+    <!--<p>Publicado por: {{ agentes.author_post }}</p>-->
+    <p>Subido el: {{ agentes.published }}</p> 
+    </div>
+</div>
+
+{% endfor %}
+
+{% endblock %}

@@ -1,0 +1,46 @@
+{% extends 'core/base.html' %}
+{% load static %}
+
+{% block background %}
+{% static 'core/images/agent.jpg' %}
+{% endblock %}
+
+{% block cont %}
+
+<h2>Registro para recibir novedades.</h2>
+<form action="" method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Enviar Datos</button>
+    {% if form_enviado %}
+        <div id="alerta-formulario" style="background-color: #dff0d8; border: 1px solid #3c763d; color: #3c763d; padding: 10px;">
+            ¡El formulario ha sido enviado exitosamente!
+        </div>
+        <script>
+            // Eliminar la alerta después de 5 segundos
+            setTimeout(function() {
+                var alerta = document.getElementById("alerta-formulario");
+                alerta.parentNode.removeChild(alerta);
+            }, 5000);
+        </script>
+    {% else %}
+        <div id="alerta-formulario" style="background-color: #f2dede; border: 1px solid #a94442; color: #a94442; padding: 10px;">
+             ¡Hay errores en el formulario! Por favor, verifique los datos ingresados e intente de nuevo.
+        </div>
+        <script>
+            // Eliminar la alerta después de 5 segundos
+            setTimeout(function() {
+                var alerta = document.getElementById("alerta-formulario");
+                alerta.parentNode.removeChild(alerta);
+            }, 5000);
+        </script>
+    
+    {% endif %}
+</form>
+    
+
+
+  
+  <div class="col-md-6">
+      <div class="blockquote-box blockquote-info clearfix">
+{% endblock %}

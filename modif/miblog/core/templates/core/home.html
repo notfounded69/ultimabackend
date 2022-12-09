@@ -1,0 +1,101 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% block header %}
+<h1>Roberto Pérez</h1>
+<span class="subheading">Ingeniero</span>
+{% endblock %}
+{% block background %}
+{% static 'core/images/valora.jpg' %}
+{% endblock %}
+
+{% block btBan %}
+ id="da-slider"
+{% endblock %}
+
+{% block titulo1 %}
+SOMOS VALORANT
+{% endblock %}
+
+{% block parrafo1 %}
+Un shooter táctico 5v5 basado en personajes
+{% endblock %}
+
+{% block titulo2 %}
+DESAFIAD LOS LÍMITES
+{% endblock %}
+
+{% block parrafo2 %}
+Demostrad vuestro estilo y experiencia en un escenario competitivo internacional. Dispondréis de 13 rondas para atacar y defender vuestro lado mediante un manejo de armas preciso y habilidades tácticas.
+{% endblock %}
+
+{% block download%}
+<section class="herotxt">
+  
+
+    <!--<div class="container text-center sectionBox">
+      <h2 >Welcome!</h2>
+      <p class="text-muted"> Nullam ac rhoncus sapien, non gravida purus. Alinon elit imperdiet congue. Integer ultricies<br/>
+        Sed elit imperdiet congue. Integer ultricies sed ligula eget tempus. </p>
+    </div>-->
+    
+      <div class="container sectionBox">
+    <div class="row">
+                    <div class="col-md-9">
+                        <span>Bienvenido a Valorant!</span>
+                        <p>¿Estas listo para jugar? Haz click en el siguiente boton para descargar VALORANT</p>
+                    </div>            
+                    <div class="col-md-3 btn-download">
+                        <a href="https://valorant.secure.dyn.riotcdn.net/channels/public/x/installer/current/live.live.eu.exe" class="btn-u btn-u-lg"><i class="fa fa-cloud-download"></i> Descargar VALORANT</a>
+                       
+                      </div>
+                </div>
+                </div>
+    </section>
+    {% endblock %}
+    {% block cont %}
+    <div class="row">         
+        <div class="col-md-6">
+          <div class="heading">  
+            <h2>Sobre el juego ... </h2>
+            <br/>
+          </div> 
+              <p>Valorant es un hero shooter en primera persona multijugador gratuito desarrollado y publicado por Riot Games. El juego se anunció por primera vez con el nombre en clave Project A en octubre de 2019. Fue lanzado para Microsoft Windows el 2 de junio de 2020 después de su beta cerrada lanzada el 7 de abril de 2020.</p>
+              <blockquote class="blockquote-1">
+                <p>"Te mantendremos al tanto sobre las novedades de los agentes, mapas y más en <a href="https://playvalorant.com/es-mx/news/" target="blank">nuestra página de noticias</a> Siempre puedes contactarnos a través de nuestras <a href="https://twitter.com/VALORANTLATAM" target="blank">redes sociales</a> para todo lo demás.</p>
+                <!--<small>Someone famous in <cite title="Source Title">Source Title</cite></small> </blockquote>-->
+        </div>
+        <div class="col-md-6">
+            <div class="blockquote-box blockquote-info clearfix">
+    {% endblock %}
+    {% block panel %}
+    <div class="footer1">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-5 panel">
+              <h3 class="panel-title">Novedades</h3>
+              <div class="panel-body">
+                <p>SPIKE NEWS: ARMAS DE ALMAS
+                  Nuevo canal de esports, nuevos aspectos de armas y nuevas notas de versión.</p>
+              </div>
+            </div>
+            <!--<div class="col-md-4 panel contact">
+              <h3 class="panel-title">
+              Contact Info
+              </h4>
+              <div class="panel-body">
+                <p>Lorem ipsum dolor amet, consectetur adipiscing ipsum dolor.</p>
+                <ul>
+                  <li><i class="fa fa-phone"></i>1-123-345-6789</li>
+                  <li><a href="#"><i class="fa fa-envelope-o"></i> contact@webthemez.com</a></li>
+                  <li><i class="fa fa-flag"></i>123 Smith Drive, Baltimore, MD 21212</li>
+                </ul>
+              </div>
+            </div>-->
+            <div class="col-md-3 panel">
+              <h3 class="panel-title">Redes Sociales</h3>
+              <div class="panel-body">
+                <p class="follow-me-icons"> <a href="https://twitter.com/valorantlatam"><i class="fa fa-twitter fa-2"></i></a> <a href="https://www.instagram.com/valorantlatam/"><i class="fa fa-instagram fa-2"></i></a></i></a> <a href="https://www.facebook.com/latamVALORANT/"><i class="fa fa-facebook fa-2"></i></a> <a href="https://www.facebook.com/latamVALORANT/"><i class="fa fa-youtube fa-2"></i></a> <a href="https://www.twitch.tv/valorant"><i class="fa fa-twitch fa-2"></i></a> </p>
+              </div>
+            </div>
+          </div>
+    {% endblock %}
